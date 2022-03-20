@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Criando as Moedas"
+
+Coin.create!([
+  {
+    description: "Bitcoin",
+    acronym: "BTC",
+    url_image: "https://imagensemoldes.com.br/wp-content/uploads/2020/09/Logo-Moedas-Dinheiro-Bitcoin-PNG.png"
+  },
+  {
+    description: "UDS Coin",
+    acronym: "USDC",
+    url_image: "https://cryptologos.cc/logos/usd-coin-usdc-logo.png"
+  }
+])
+
+puts "Moedas criadas com sucesso"
